@@ -1,6 +1,10 @@
 export const theme = {
   colors: {
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    primary: '#846219',
+    brownLight: '#716565',
+    backgroundLight: '#E9E9E9',
+    blueLight: '#506FA9',
   },
   spacings: {
     small: '1rem',

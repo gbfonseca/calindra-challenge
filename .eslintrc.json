@@ -9,7 +9,8 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended",
-        "prettier"
+        "prettier",
+        "next"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -28,10 +29,16 @@
       "react/jsx-props-no-spreading": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"]}],
+      "jsx-a11y/anchor-is-valid": [ "error", {
+        "components": [ "Link" ],
+        "specialLink": [ "hrefLeft", "hrefRight" ],
+        "aspects": [ "invalidHref", "preferButton" ]
+      }],
       "import/extensions": [
         "error",
         "ignorePackages",
         {
+
           "ts": "never",
           "tsx": "never"
         }
@@ -44,5 +51,8 @@
           "allowSingleExtends": true
         }
       ]
+    },
+    "settings": {
+      "import/extensions": [".ts", ".tsx"]
     }
 }
