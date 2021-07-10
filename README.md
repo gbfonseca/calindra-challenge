@@ -6,8 +6,8 @@ Execute:
 
 ```bash
 npm install
-npm run next
+npm run dev
 # or
 yarn install
-yarn next
+yarn dev
 ```
